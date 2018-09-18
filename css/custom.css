@@ -1,0 +1,31 @@
+/* Your custom css code goes here */
+
+.container2{
+	
+	padding-left: 20px;
+	position: fixed;
+	padding-top: 25px;
+}
+
+.menu_white{
+	padding-top:40px;
+}
+.bgblack{
+	padding-top:10rem;
+    padding-bottom:calc(10rem - 56px);
+    background-image:url(../img/Logo_Enclosed.svg);
+    background-position:center center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body {
+  margin: 0;
+  height: 1000px;
+
+	
+}
