@@ -1,4 +1,3 @@
-
 @font-face{
     font-family:icomoon;
     src:url(../fonts/icomoon/icomoon.eot?1z9v6x);
@@ -55,17 +54,19 @@ ol,p,ul{
 a{
     -webkit-transition:.3s all;
     transition:.3s all;
-    color:blue
+    color:#3982B0
+
 }
 a:active,a:focus,a:hover{
     color:#000;
     text-decoration:none
 }
 .probootstrap-header{
-    padding-top:30px;
-    width:100%;
-    z-index:4;
-    position:absolute
+	padding-top: 30px;
+	width: 100%;
+	z-index: 4;
+	position: absolute;
+	top: 6px;
 }
 .probootstrap-feature-first{
     position:relative;
@@ -190,7 +191,8 @@ a:active,a:focus,a:hover{
 }
 .probootstrap-main-nav li.probootstrap-cta a:hover{
     background:#fff;
-    color:blue
+    color:#3982B0
+
 }
 .probootstrap-mobile-menu-active .probootstrap-main-nav li.probootstrap-cta{
     margin-left:0;
@@ -224,7 +226,7 @@ a:active,a:focus,a:hover{
     background-repeat:no-repeat;
     position:relative;
     top:0;
-    height:700px;
+    height:650px;
     overflow:hidden
 }
 .probootstrap-intro .probootstrap-scroll-down{
@@ -258,9 +260,9 @@ a:active,a:focus,a:hover{
     right:0;
     bottom:0;
     content:"";
-    background:black;
-    background:-webkit-gradient(linear,left top,right top,from(black),to(green));
-    background:linear-gradient(to right,#10107C 0,black 100%);
+    background:#263F60;
+    background:-webkit-gradient(linear,left top,right top,from(#263F60),to(#000000));
+    background:linear-gradient(#2B4573 60%,#282828 100%);
     filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=$firstcolor, endColorstr=$secondcolor, GradientType=1 );
     opacity:.8
 }
@@ -271,7 +273,7 @@ a:active,a:focus,a:hover{
 }
 .probootstrap-intro h1{
     font-size:67px;
-    color:#fff;
+    color:#E4EBE0;
     font-weight:300;
     line-height:1.15
 }
@@ -401,8 +403,10 @@ a:active,a:focus,a:hover{
     padding-bottom:20px
 }
 .btn.btn-primary{
-    border:1px solid blue;
-    background:blue;
+    border:1px solid #3982B0
+;
+    background:#3982B0
+;
     color:#fff
 }
 .btn.btn-primary:active,.btn.btn-primary:focus,.btn.btn-primary:hover{
@@ -416,18 +420,23 @@ a:active,a:focus,a:hover{
 }
 .btn.btn-ghost{
     background:0 0;
-    border:1px solid blue;
-    color:blue
+    border:1px solid #3982B0
+;
+    color:#3982B0
+
 }
 .btn.btn-ghost:hover{
-    background:blue;
+    background:#3982B0
+;
     color:#fff
 }
 .btn.btn-ghost:active,.btn.btn-ghost:focus{
     outline:0;
     background:0 0;
-    color:blue;
-    border:1px solid blue
+    color:#3982B0
+;
+    border:1px solid #3982B0
+
 }
 .btn.btn-ghost.btn-ghost-white{
     background:0 0;
@@ -436,12 +445,14 @@ a:active,a:focus,a:hover{
 }
 .btn.btn-ghost.btn-ghost-white:hover{
     background:#fff;
-    color:blue
+    color:#3982B0
+
 }
 .btn.btn-ghost.btn-ghost-white:active,.btn.btn-ghost.btn-ghost-white:focus{
     outline:0;
     background:#fff;
-    color:blue;
+    color:#3982B0
+;
     border:1px solid #fff
 }
 .btn.btn-black,.btn.btn-black:active,.btn.btn-black:focus,.btn.btn-black:hover{
@@ -477,13 +488,15 @@ a:active,a:focus,a:hover{
     filter:progid:DXImageTransform.Microsoft.gradient( startColorstr=$firstcolor, endColorstr=$secondcolor, GradientType=1 )
 }
 .probootstrap-section.probootstrap-section-colored .section-heading .heading-with-icon,.probootstrap-section.probootstrap-section-colored .section-heading h2,.probootstrap-section.probootstrap-section-dark .section-heading .heading-with-icon,.probootstrap-section.probootstrap-section-dark .section-heading h2{
-    color:darkblue
+    color:dark#3982B0
+
 }
 .probootstrap-section.probootstrap-section-colored .section-heading p,.probootstrap-section.probootstrap-section-dark .section-heading p{
     color:gray
 }
 .probootstrap-section.probootstrap-section-colored .heading-with-icon,.probootstrap-section.probootstrap-section-colored .heading-with-icon i,.probootstrap-section.probootstrap-section-dark .heading-with-icon,.probootstrap-section.probootstrap-section-dark .heading-with-icon i{
-    color:blue
+    color:#3982B0
+
 }
 .probootstrap-section.probootstrap-section-colored p,.probootstrap-section.probootstrap-section-dark p{
     color:#fff
@@ -520,7 +533,8 @@ a:active,a:focus,a:hover{
     bottom:0
 }
 .probootstrap-product-tour h5{
-    color:blue;
+    color:#3982B0
+;
     margin-bottom:0
 }
 .probootstrap-half{
@@ -591,9 +605,9 @@ a:active,a:focus,a:hover{
     line-height:1.65
 }
 .probootstrap-footer{
-    padding:7em 0 2em;
+    padding:0em 0em 1em;
     background:#fff;
-    position:relative
+    position:relative;
 }
 .probootstrap-footer .probootstrap-copyright{
     padding:3em 0;
@@ -736,7 +750,8 @@ a:active,a:focus,a:hover{
     color:#000
 }
 .probootstrap-block-image .text h3 a:hover{
-    color:blue
+    color:#3982B0
+
 }
 .probootstrap-block-image .text p.dark{
     color:#999
@@ -860,7 +875,8 @@ a:active,a:focus,a:hover{
     margin-top:10px;
     display:block;
     letter-spacing:normal;
-    color:blue;
+    color:#3982B0
+;
     font-size:14px;
     text-transform:uppercase
 }
@@ -869,7 +885,8 @@ a:active,a:focus,a:hover{
 }
 .probootstrap-pricing .probootstrap-price-wrap .probootstrap-price{
     font-size:50px;
-    color:blue;
+    color:#3982B0
+;
     font-weight:100;
     line-height:1.2;
     display:block
@@ -903,7 +920,8 @@ a:active,a:focus,a:hover{
     vertical-align:top
 }
 .heading-with-icon i{
-    color:blue;
+    color:#3982B0
+;
     font-size:30px;
     position:relative;
     margin-right:20px;
@@ -921,7 +939,8 @@ a:active,a:focus,a:hover{
 }
 .probootstrap-box .icon i{
     font-size:50px;
-    color:blue
+    color:#3982B0
+
 }
 .probootstrap-box ul{
     padding:0;
@@ -958,14 +977,16 @@ a:active,a:focus,a:hover{
 }
 .progress-bar{
     border:none;
-    background-color:blue;
+    background-color:#3982B0
+;
     border-radius:10px;
     -webkit-box-shadow:none;
     box-shadow:none;
     position:relative
 }
 .progress-bar>span{
-    background:blue;
+    background:#3982B0
+;
     padding:2px 4px;
     font-size:10px;
     position:absolute;
@@ -979,7 +1000,8 @@ a:active,a:focus,a:hover{
     height:0;
     border-left:5px solid transparent;
     border-right:5px solid transparent;
-    border-top:7px solid blue;
+    border-top:7px solid #3982B0
+;
     position:absolute;
     bottom:-7px;
     left:50%;
@@ -1014,7 +1036,8 @@ a:active,a:focus,a:hover{
 .nav-pills.probootstrap-tabs>li>a,.nav-tabs.probootstrap-tabs>li>a{
     border-radius:0;
     padding:20px 30px;
-    background:blue;
+    background:#3982B0
+;
     color:#fff;
     font-size:16px;
     border:none!important
@@ -1064,7 +1087,8 @@ a:active,a:focus,a:hover{
 }
 .service .icon i{
     font-size:40px;
-    color:blue
+    color:#3982B0
+
 }
 .service h3{
     font-size:22px;
@@ -1146,7 +1170,8 @@ a:active,a:focus,a:hover{
 .probootstrap-form .form-control:active,.probootstrap-form .form-control:focus{
     -webkit-box-shadow:none;
     box-shadow:none;
-    border-color:blue;
+    border-color:#3982B0
+;
     background:#fff
 }
 .probootstrap-form textarea.form-control{
@@ -1183,7 +1208,8 @@ a:active,a:focus,a:hover{
     font-size:15px
 }
 .with-icon.colored i{
-    color:blue
+    color:#3982B0
+
 }
 .flexslider,.flexslider .slides>li,.slider-height{
     height:800px
@@ -1562,7 +1588,8 @@ a:active,a:focus,a:hover{
     color:#000!important
 }
 .probootstrap-primary-color{
-    color:blue!important
+    color:#3982B0
+!important
 }
 .probootstrap-secondary-color{
     color:black!important
