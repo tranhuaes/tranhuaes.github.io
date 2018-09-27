@@ -168,7 +168,7 @@ $headers = 'From: '.$email_from."\r\n".
       <div class="row button-padding">
         <div class="col-md-4 col-md-offset-4 probootstrap-animate">
           <p class="text-center">
-            <a href="index.html" class="btn btn-ghost btn-ghost-blue btn-lg btn-block" role="button">Back to Home Page</a>
+            <a href="http://www.elsontran.com/" class="btn btn-ghost btn-ghost-blue btn-lg btn-block" role="button">Back to Home Page</a>
           </p>
         </div>
       </div>
