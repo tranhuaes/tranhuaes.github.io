@@ -4,16 +4,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Elson S. Tran &mdash; Rookie Making some Rookie Stuff</title>
+		<title>Elson S. Tran &mdash; User Experience Designer</title>
 		<meta name="description" content="Elson's UX Design Portfolio">
-		<meta name="keywords" content="UX design, ux, ui, ia, user experience, user interface, ">
+		<meta name="keywords" content="UX design, ux, ui, ia, user experience, user interface, general assembly">
 
 		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet"> 
 		<link rel="stylesheet" href="css/styles-merged.css">
 		<link rel="stylesheet" href="css/style.min.css">
 		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
-
+		
 		<!--[if lt IE 9]>
 		  <script src="js/vendor/html5shiv.min.js"></script>
 		  <script src="js/vendor/respond.min.js"></script>
@@ -24,15 +24,15 @@
 <!-- START: header -->
 	<header role="banner" class="probootstrap-header">
     <div class="container-fluid">
-	  <a class="container2"> <img src="img/Logo_Enclosed.svg" height = "80" alt=""/></a>
-	  <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+	  <a class="container2"> <img src="img/Logo_Enclosed.svg" alt="" height ="80" class="hidden-xs"></a>
+	  <a href="#top" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
       <div class="mobile-menu-overlay"></div> 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav menu_white">
-            	<li><a href="index.html"><i class="icon-home3"></i> Home</a></li>
+            	<li class="active"><a href="index.html"><i class="icon-home3"></i> Home</a></li>
             	<li><a href="Projects_Main.html"><i class="icon-briefcase"></i> Projects</a></li>
             	<li><a href="My_Story.html"><i class="icon-book2"></i> Story</a></li>
-            	<li class="active"><a href="Contact.html"><i class="icon-address-book"></i> Contact</a></li>
+            	<li><a href="Contact.html"><i class="icon-address-book"></i> Contact</a></li>
 				<li><a href="ET_Resume_9_2018_UX.pdf" target="_blank"><i class="icon-cloud-download"></i> Resume</a></li>
           </ul> 
           <div class="extra-text visible-xs">
@@ -43,6 +43,7 @@
 				<li><a href="Contact.html"><i class="icon-mail"></i></a></li>
             </ul>
             <p><small>&copy; Copyright 2018 Elson S. Tran. All Rights Reserved.</small></p>
+			<p><img src="img/Logo_Enclosed.svg" height="100" class="visible-xs-block center-block" alt="Logo White"></p>
           </div>
         </nav>
     </div>
@@ -50,15 +51,14 @@
 <!-- END: header -->
   
   <!-- START: section -->
-  <section class="probootstrap-intro" style="background-image: url(img/hero_bg_2.jpg);" data-stellar-background-ratio="0.5">
+  <section class="probootstrap-intro" style="background-image: url(img/aboutme_hero2.jpg);" data-stellar-background-ratio="0.5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-7 probootstrap-intro-text">
-          <h1 class="probootstrap-animate">Contact</h1>
+          <h1 class="probootstrap-animate">Contact Me!</h1>
           <div class="probootstrap-subtitle probootstrap-animate">
-            <h2>A free html website template for creative agency like you! brought to you by <a href="https://uicookies.com/" target="_blank">uicookies.com</a></h2>
+            <h2>Feel free to reach out for any reason! I'm always looking to help!</h2>
           </div>
-          <p class="watch-intro probootstrap-animate"><a href="https://vimeo.com/45830194" class="popup-vimeo">Watch the video <i class="icon-play2"></i></a></p>
         </div>
       </div>
     </div>
@@ -69,77 +69,66 @@
   <section id="next-section" class="probootstrap-section">
     <div class="container">
       
-      <div class="row mb60">
+      <div class="row mb0">
         <div class="col-md-8 col-md-offset-2 probootstrap-animate">
-          <form action="#" method="post" class="probootstrap-form">
-            <div class="form-group">
-              <label for="name">Full Name</label>
-              <input type="text" class="form-control" id="name" name="name">
+			
+          <form name ="contactform" action="send_form_email.php" method="post" class="probootstrap-form">
+            
+			  <div class="form-group">
+              <label for="first_name">First Name *</label>
+              <input type="text" class="form-control" id="first_name" name="first_name"> 
             </div>
+			  
+			<div class="form-group">
+              <label for="last_name">Last Name *</label>
+              <input type="text" class="form-control" id="last_name" name="last_name">
+            </div>  
+			  
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email">
+              <label for="email">Email Address *</label>
+              <input type="text" class="form-control" id="email" name="email">
             </div>
+			  
+			<div class="form-group">
+              <label for="telephone">Telephone</label>
+              <input type="text" class="form-control" id="telephone" name="telephone">
+            </div> 
+			  
             <div class="form-group">
-              <label for="subject">Subject</label>
+              <label for="subject">Subject </label>
               <input type="text" class="form-control" id="subject" name="subject">
             </div>
+			  
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
+              <label for="comments">Message *</label>
+              <textarea cols="30" rows="10" class="form-control" id="comments" name="comments"></textarea>
             </div>
+			  
             <div class="form-group">
-              <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+              <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Submit">
             </div>
+			  
           </form>
         </div>
-       
+       </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <h3>New York</h3>
-          <ul class="probootstrap-contact-info">
-            <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-            <li><i class="icon-mail"></i><span>info@domain.com</span></li>
-            <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h3>London</h3>
-          <ul class="probootstrap-contact-info">
-            <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-            <li><i class="icon-mail"></i><span>info@domain.com</span></li>
-            <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h3>Australia</h3>
-          <ul class="probootstrap-contact-info">
-            <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-            <li><i class="icon-mail"></i><span>info@domain.com</span></li>
-            <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </section>
 
   
 
   <!-- START: section -->
-  <section class="probootstrap-section probootstrap-section-colored">
+  <section class="probootstrap-section probootstrap-section-colored mb0">
     <div class="container">
       <div class="row text-center">
-        <div class="col-lg-8 col-md-offset-2 mb30 section-heading probootstrap-animate">
-          <h2>Let's Work Together</h2>
-          <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <div class="col-lg-8 col-md-offset-2 section-heading probootstrap-animate">
+          <h2>Let's Work Together!</h2>
+          <p class="lead">I'm always interested in hearing ideas and brainstorming! </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row button-padding">
         <div class="col-md-4 col-md-offset-4 probootstrap-animate">
           <p class="text-center">
-            <a href="#" class="btn btn-ghost btn-ghost-white btn-lg btn-block" role="button">Contact Us</a>
+            <a href="ET_Resume_9_2018_UX.pdf" class="btn btn-ghost btn-ghost-blue btn-lg btn-block" role="button">My Resume</a>
           </p>
         </div>
       </div>
@@ -147,21 +136,21 @@
   </section>
   <!-- END: section -->
   <!-- START: footer -->
-	  <footer role="contentinfo" class="probootstrap-footer">
+<footer role="contentinfo" class="probootstrap-footer">
 		  <div class="row mt40">
 			<div class="col-md-12 text-center">
 				<p>
-			  <h3>Connect With Us</h3>
+			  <h3>Connect With Me</h3>
 				<ul class="probootstrap-footer-social">
 					<li><a href="https://www.linkedin.com/in/elsontran/" target="_blank"><i class="icon-linkedin"></i></a></li>
 					<li><a href="Contact.html"><i class="icon-mail"></i></a></li>
 				</ul>
 					<small>&copy; 2018 Elson S. Tran. All Rights Reserved. <br> Designed by <a href="My_Story.html" target="_blank">Elson S. Tran</a><br>
-					<a href="#" class="js-backtotop">Back to top</a></small>
+					<a href="#top" class="js-backtotop">Back to Top</a></small>
 				</p>
 			</div>
 		  </div>
-	  </footer>
+</footer>
   <!-- END: footer -->
   <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
