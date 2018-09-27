@@ -6,65 +6,13 @@ if(isset($_POST['email'])) {
     $email_subject = "POTENTIAL - FROM WEBSITE - PLEASE CONTACT ** ";
  
     function died($error) {
-?>
-<!DOCTYPE html>
-<html lang="en">
-<!-- START: Head -->	
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Elson S. Tran &mdash; User Experience Designer</title>
-		<meta name="description" content="Elson's UX Design Portfolio">
-		<meta name="keywords" content="UX design, ux, ui, ia, user experience, user interface, general assembly">
-
-		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet"> 
-		<link rel="stylesheet" href="css/styles-merged.css">
-		<link rel="stylesheet" href="css/style.min.css">
-		<link rel="stylesheet" href="css/custom.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
-		
-		<!--[if lt IE 9]>
-		  <script src="js/vendor/html5shiv.min.js"></script>
-		  <script src="js/vendor/respond.min.js"></script>
-		<![endif]-->
-	  </head>
-	  <section class="probootstrap-section probootstrap-section-colored mb0">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-8 col-md-offset-2 section-heading probootstrap-animate">
-          <h2>Sorry, looks like something went wrong!</h2>
-        </div>
-      </div>
-      <div class="row button-padding">
-        <div class="col-md-4 col-md-offset-4 probootstrap-animate">
-          <p class="text-center">
-            <a href="Contact.html" class="btn btn-ghost btn-ghost-blue btn-lg btn-block" role="button">Try Again!</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END: section -->
-  <!-- START: footer -->
-<footer role="contentinfo" class="probootstrap-footer">
-		  <div class="row mt40">
-			<div class="col-md-12 text-center">
-				<p>
-					<small>&copy; 2018 Elson S. Tran. All Rights Reserved. <br> Designed by <a href="My_Story.html" target="_blank">Elson S. Tran</a><br></small>
-				</p>
-			</div>
-		  </div>
-</footer>
-  <!-- END: footer -->
-  <script src="js/scripts.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script src="js/custom.js"></script>
-  </body>
-</html>
-
-<?php
-	
-	}
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
  
  
     // validation expected data exists
