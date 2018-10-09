@@ -50,3 +50,12 @@
 	background: transparent;
 
 }
+
+.img_cs_shadow{
+	box-shadow: 2px 2px 4px 2px;
+
+}
+
+.img_top_padding_30 {
+	padding-top: 30px;
+}
