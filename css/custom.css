@@ -59,3 +59,15 @@
 .img_top_padding_30 {
 	padding-top: 30px;
 }
+
+.section-coloring {
+    background:#263F60;
+	background:-webkit-gradient(linear,left top,right top,from(#263F60),to(#000000));
+	background:linear-gradient(#2B4573 60%,#282828 100%);
+	color:#E7E7E7;
+	text-shadow: 1pt 1pt 1pt #000000;
+}
+
+.section-coloring h2{
+	color:#ffffff;
+}
