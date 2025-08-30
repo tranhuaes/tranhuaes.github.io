@@ -9,20 +9,26 @@
     html, body {
       margin: 0; padding: 0; height: 100%; width: 100%;
       background: linear-gradient(90deg, #F0F5FF 0%, #FFF1DE 100%);
-      overflow: hidden;
+      overflow: hidden; /* no scrollbars / gutters */
       display: flex; align-items: center; justify-content: center;
     }
+
+    /* 16:9 wrapper that fits within either dimension */
     .figma-container {
+      position: relative;
       width: min(90vw, calc(100vh * 16 / 9));
       aspect-ratio: 16 / 9;
       background: linear-gradient(90deg, #F0F5FF 0%, #FFF1DE 100%);
     }
-    iframe {
+
+    /* Full-bleed the iframe by 1px on every side to kill hairlines */
+    .figma-container iframe {
+      position: absolute;
+      top: -1px; right: -1px; bottom: -1px; left: -1px;
       width: calc(100% + 2px);
       height: calc(100% + 2px);
-      margin: -1px;      /* trims black line edges */
-      border: 0; outline: 0;
-      display: block;
+      border: 0; outline: 0; display: block;
+      transform: translateZ(0); /* nudge GPU to avoid subpixel seams */
     }
   </style>
 </head>
