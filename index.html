@@ -10,17 +10,17 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      background: #111; /* background fill around prototype */
+      background: #f9f9f9; /* match prototype background */
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .figma-container {
       position: relative;
-      width: 100%;
-      max-width: 100vw;
-      aspect-ratio: 16 / 9; /* lock to 1920x1080 ratio */
-      background: #111;
+      width: 90vw;              /* leave margin so height fits */
+      max-width: 1600px;        /* cap for large monitors */
+      aspect-ratio: 16 / 9;     /* lock to 1920x1080 ratio */
+      background: #f9f9f9;      /* same as page background */
     }
     iframe {
       width: 100%;
