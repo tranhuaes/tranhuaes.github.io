@@ -5,24 +5,22 @@
   <title>Elson Tran – UX Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    * { box-sizing: border-box; }
     html, body {
-      margin: 0; padding: 0;
-      height: 100%; width: 100%;
-      background: #f9f9f9;  /* match prototype background */
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      margin: 0; padding: 0; height: 100%; width: 100%;
+      background: linear-gradient(90deg, #FFF1DE 0%, #F0F5FF 100%);
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
     }
     .figma-container {
-      width: 90vw;               /* narrower than full screen */
-      max-width: 1600px;         /* cap for large displays */
-      aspect-ratio: 16 / 9;      /* lock to 1920x1080 */
-      background: #f9f9f9;
+      width: min(90vw, calc(100vh * 16 / 9)); /* fit width/height */
+      aspect-ratio: 16 / 9;                   /* keep 1920x1080 ratio */
+      background: linear-gradient(90deg, #FFF1DE 0%, #F0F5FF 100%);
     }
     iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
+      width: 100%; height: 100%;
+      border: 0; outline: 0;
+      display: block;
     }
   </style>
 </head>
@@ -30,8 +28,8 @@
   <div class="figma-container">
     <iframe
       src="https://embed.figma.com/proto/Xkb6WHDwRLTz1zZmLekh0n/2025-UX-Portfolio?page-id=0%3A1&node-id=204-46116&p=f&viewport=394%2C209%2C0.04&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=204%3A46130&embed-host=share&hide-ui=1"
-      allowfullscreen>
-    </iframe>
+      allowfullscreen
+    ></iframe>
   </div>
 </body>
 </html>
