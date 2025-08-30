@@ -8,17 +8,19 @@
     * { box-sizing: border-box; }
     html, body {
       margin: 0; padding: 0; height: 100%; width: 100%;
-      background: linear-gradient(90deg, #FFF1DE 0%, #F0F5FF 100%);
+      background: linear-gradient(90deg, #F0F5FF 0%, #FFF1DE 100%);
       overflow: hidden;
       display: flex; align-items: center; justify-content: center;
     }
     .figma-container {
-      width: min(90vw, calc(100vh * 16 / 9)); /* fit width/height */
-      aspect-ratio: 16 / 9;                   /* keep 1920x1080 ratio */
-      background: linear-gradient(90deg, #FFF1DE 0%, #F0F5FF 100%);
+      width: min(90vw, calc(100vh * 16 / 9));
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(90deg, #F0F5FF 0%, #FFF1DE 100%);
     }
     iframe {
-      width: 100%; height: 100%;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      margin: -1px;      /* trims black line edges */
       border: 0; outline: 0;
       display: block;
     }
