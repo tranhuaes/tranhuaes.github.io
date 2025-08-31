@@ -12,12 +12,10 @@
       overflow: hidden;
       display: flex; align-items: center; justify-content: center;
     }
-    /* Wrapper has no background to avoid showing any gap */
     .frame-wrap {
       position: relative;
       overflow: hidden;
     }
-    /* Over-bleed iframe so it always covers the wrap */
     .frame-wrap iframe {
       position: absolute;
       top: -1px; right: -1px; bottom: -1px; left: -1px;
@@ -31,7 +29,7 @@
 <body>
   <div id="figmaWrap" class="frame-wrap" aria-label="Portfolio prototype">
     <iframe
-      src="https://embed.figma.com/proto/Xkb6WHDwRLTz1zZmLekh0n/2025-UX-Portfolio?page-id=0%3A1&node-id=204-46116&p=f&viewport=394%2C209%2C0.04&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=204%3A46130&embed-host=share&hide-ui=1"
+      src="https://embed.figma.com/proto/Jp11xsBJNtrHtoTYNnZiBr/AMZN-Promo-Deck?page-id=1081%3A28155&node-id=1081-28164&p=f&viewport=-295%2C302%2C0.25&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1081%3A28178&embed-host=share&hide-ui=1"
       allowfullscreen
       loading="eager"
     ></iframe>
@@ -44,10 +42,10 @@
       const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
       const maxW = Math.floor(vw * 0.90);
-      const hFromVh = Math.floor(vh);                 // full usable height
-      const wFromVh = Math.floor(hFromVh * 16 / 9);   // 16:9 width from height
+      const hFromVh = Math.floor(vh);
+      const wFromVh = Math.floor(hFromVh * 16 / 9);
       const targetW = Math.min(maxW, wFromVh);
-      const targetH = Math.floor(targetW * 9 / 16);   // exact 16:9 height
+      const targetH = Math.floor(targetW * 9 / 16);
 
       const el = document.getElementById('figmaWrap');
       el.style.width  = targetW + 'px';
